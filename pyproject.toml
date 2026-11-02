@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auramaster"
+version = "1.0.0"
+description = "Intelligent audio restoration and music remastering library and CLI with embedded custom audio-only FFmpeg."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "AuraMaster Audio Engineering"}
+]
+classifiers = [
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Conversion",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+]
+dependencies = [
+    "numpy>=1.22.0",
+    "scipy>=1.9.0",
+]
+
+[project.scripts]
+auramaster = "auramaster.cli:main"

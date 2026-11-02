@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ffmpeg build files
+build_ffmpeg_workspace
+
+# test audio files
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.opus
